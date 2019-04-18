@@ -133,6 +133,8 @@ public class URLConnection {
      */
     public static void getComment(int page){
         String url = "https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv15&productId=6138112&score=0&sortType=5&page=" + String.valueOf(page) + "&pageSize=10&isShadowSku=0&fold=1";
+                     // https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv197&productId=7652013&score=0&sortType=5&page=1&pageSize=10&isShadowSku=0&rid=0&fold=1
+                     // https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv177&productId=100003434260&score=0&sortType=5&page="+ + "&pageSize=10&isShadowSku=0&fold=1
         try{
             String html = retry4GetHtml(url);//获得爬取的数据json串
             System.out.println("第" + (page + 1) + "页html已成功获取,开始构建json串...");
